@@ -21,6 +21,9 @@ export default function Item(props) {
                 : 
                 <div className="product__status">&nbsp;</div>
             }
+            <div className="mt-3">
+                <p className="my-0"><small><strong>Size available:</strong> {product.size.map((size) => size + ' ')}</small></p>
+            </div>
             <div className="d-flex align-items-center mx-0 mt-3">
                 <div className="col-7 px-0">
                     <p className="product__name">{product.productName}</p>
