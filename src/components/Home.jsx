@@ -8,9 +8,7 @@ export default function Home() {
     const handleChange = (e) => {
         const selected = e.target.value;
         const filteredProducts = [];
-        products.map(product => {
-            if (product.size.includes(selected)) filteredProducts.push(product);
-        })
+        products.map(product => product.size.includes(selected) && filteredProducts.push(product));
         // Set new products
         setState((filteredProducts.length > 0) ? filteredProducts : products);
     }
