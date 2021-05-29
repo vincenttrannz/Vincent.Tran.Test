@@ -1,0 +1,67 @@
+// Bootstrap
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
+
+$lightBlue: #bfd6da;
+
+.filterBar {
+    background-color: $lightBlue;
+}
+
+.is {
+    &__danger {
+        background-color: $danger;
+    }
+    &__success {
+        background-color: $success;
+    }
+}
+
+.product {
+    &__status {
+        padding: 10px;
+        p {
+            font-size: 0.9em;
+            color: #fff;
+        }
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &__price {
+        text-align: right;
+        font-weight: bold;
+        font-size: 28px;
+    }
+}
+
+.form-select {
+    cursor: pointer;
+    background-image: url(../../images/up_down_1.svg) !important;
+    background-position: right 0.75rem bottom 0.25rem !important;
+    background-size: 16px 18px !important;
+}
+
+@media screen and (max-width: 1199px) {
+    .product {
+        &__status {
+            padding: 5px;
+            p {font-size: 0.8em;}
+        }
+        &__name {
+            font-size: 14px;
+        }
+        &__price {
+            font-size: 22px;
+        }
+    } 
+}
